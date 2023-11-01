@@ -224,6 +224,31 @@ The rules to convert a string to a float are:
 
 A ‘+’ or ‘−‘ character at the beginning of the string. This indicates that the number is either positive or negative. 
 
+### Day 3: 
+### Lambda Expressions: 
+In Python, a lambda function is a small, anonymous (unnamed) function defined using the lambda keyword. Lambda functions are often used for short, simple operations where a full function definition is not necessary. They can take any number of arguments, but they can only have one expression.
+Syntax: 
+lambda arguments: expression
+
+Example: 
+# Using a lambda function to square a number
+square = lambda x: x ** 2
+
+# Call the lambda function
+result = square(5)
+print(result)  # Output: 25
+
+Example 2: 
+# Using a lambda function to add two numbers
+addition = lambda a, b: a + b
+
+# Call the lambda function
+result = addition(3, 7)
+print(result)  # Output: 10
+
+
+
+
   
 
   
