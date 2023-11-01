@@ -246,6 +246,18 @@ addition = lambda a, b: a + b
 result = addition(3, 7)
 print(result)  # Output: 10
 
+### Booleans: 
+>>>>The Boolean data type is like a switch that can be either on (1, or True) or off (0, or False). When you write it as words, it's always 'True' or 'False,' not '1' or '0.' In Python, 'True' and 'False' are written with exact capitalization. Booleans help check if things are true or not. There are three ways to do this:
+
+1.The 'and' operator
+2.The 'or' operator
+3.The 'not' operator"
+>>>>Operators and built-in functions that have a Boolean result always return (False or 0) or (True or 1). The Boolean or and and operations always return only one of the options, either True or False.
+	Floating point numbers=are decimal values or fraction numbers
+	Complex numbers= A complex number consists of a real part and an imaginary part, and it is often written in the form a + bj, where a is the real part and b is the imaginary part. In Python, the imaginary unit is denoted by j.
+	Strings=represents a sequence of characters
+
+
 
 
 
