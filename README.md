@@ -356,9 +356,16 @@ Generate a random number between 1 and 10
 random_number = random.randrange(1, 11)
 print(random_number)
 
+## Day 3:
 ### Python Modules: 
 These are libraries that contain code, that gives classess, methods, and functions, their functionality. 
-NB: The moment a module is imported, the Python interpreter 
+NB: The moment a module is imported, the Python interpreter then fetches it from the either the program directory, or in the PYTHONPATH variable. 
+NB: You can check module lists using help("modules"). 
+
+## Day 4: 
+### Regular Expressions: 
+Regular expressions (regex) in Python are a powerful tool for pattern matching and searching in strings. The re module in Python provides support for regular expressions. Regular expressions are used to specify a search pattern, which can be a string or a complex expression, and then this pattern can be used to find matches within strings, replace substrings, or split strings based on the specified pattern.
+NB: Use the import re module to utilize RegEx. 
 
 
 
