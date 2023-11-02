@@ -256,6 +256,42 @@ print(result)  # Output: 10
 	Floating point numbers=are decimal values or fraction numbers
 	Complex numbers= A complex number consists of a real part and an imaginary part, and it is often written in the form a + bj, where a is the real part and b is the imaginary part. In Python, the imaginary unit is denoted by j.
 	Strings=represents a sequence of characters
+>>>>
+## Day 4: 
+### Operators: 
+
+#### Arithmetic Operators:
+
++ (Addition): Adds two values.
+- (Subtraction): Subtracts the right operand from the left operand.
+* (Multiplication): Multiplies two values.
+/ (Division): Divides the left operand by the right operand (results in a float).
+// (Floor Division): Divides the left operand by the right operand and rounds down to the nearest whole number.
+% (Modulus): Returns the remainder of the division.
+
+#### Comparison Operators:
+== (Equal to): Checks if two values are equal.
+!= (Not equal to): Checks if two values are not equal.
+< (Less than): Checks if the left operand is less than the right operand.
+> (Greater than): Checks if the left operand is greater than the right operand.
+<= (Less than or equal to): Checks if the left operand is less than or equal to the right operand.
+>= (Greater than or equal to): Checks if the left operand is greater than or equal to the right operand.
+
+#### Logical Operators:
+and: Returns True if both operands are True.
+or: Returns True if at least one of the operands is True.
+not: Returns True if the operand is False and False if the operand is True.
+Assignment Operators:
+
+= (Assignment): Assigns the value on the right to the variable on the left.
++=, -=, *=, /=, %=, //=: Perform the operation and assign the result to the variable.
+
+#### Other Operators:
+** (Exponentiation): Raises the left operand to the power of the right operand.
+in: Returns True if a value exists in a sequence (e.g., list, tuple, string).
+is: Returns True if two variables refer to the same object.
+not in: Returns True if a value does not exist in a sequence.
+
 
 
 
