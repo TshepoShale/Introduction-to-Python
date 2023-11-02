@@ -292,6 +292,45 @@ in: Returns True if a value exists in a sequence (e.g., list, tuple, string).
 is: Returns True if two variables refer to the same object.
 not in: Returns True if a value does not exist in a sequence.
 
+## Week 2: 
+## Day 1: 
+
+### Control Flows: 
+
+#### Sequencial: 
+This flow happens by default. Meaning from the top,downwards. 
+
+#### Selection/ Decision Control: 
+eg. else-if statements, if statements, this means testing values or conditions, before executing the instructions. 
+
+#### Repetition: 
+eg. while loops. Executes code multiple times. 
+
+## Day 2: 
+
+### Python Functions: 
+#### What are needed in Functions?:
+* Function name
+* List of zero, or more parameters
+* Optional piece of code, with return statements.
+  NB: A function can return nothing. We normally store functions in script files, because we do not want to type them more than once.
+  #### Types of Functions:
+  ##### Ordinary Functions:
+  These follow mathematical procedures.
+  ##### Procedure Functions:
+  These are called, to exectue a procedure.
+  ##### Factory Functions:
+  Do not take parameters, these generate values.
+  #### Argument VS. Parameter:
+  * Arguments are objects in an application of a function. Can also be referenced by other variables.
+  * Parameters are are variable names, that are part of the function, and is a local variable. 
+### Random module: 
+Generates random floating point numbers as outputs.
+
+#### Examples of random module functions: 
+* In Python, the randint() function is part of the random module, which provides functions for generating pseudo-random numbers. Specifically, randint(a, b) generates a random integer between a and b, inclusive.
+  Example:
+  random.randint(a, b)
 
 
 
