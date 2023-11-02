@@ -328,9 +328,40 @@ eg. while loops. Executes code multiple times.
 Generates random floating point numbers as outputs.
 
 #### Examples of random module functions: 
+
 * In Python, the randint() function is part of the random module, which provides functions for generating pseudo-random numbers. Specifically, randint(a, b) generates a random integer between a and b, inclusive.
   Example:
   random.randint(a, b)
+  
+*  In Python, the sample() function is part of the random module, and it allows you to generate a random sample of unique elements from a given population sequence without replacement.
+   Example:
+   import random
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ Generate a random sample of 3 unique numbers from the list
+random_sample = random.sample(numbers, 3)
+print(random_sample)
+
+* In Python, the choice() function is part of the random module, and it allows you to randomly select an item from a sequence (such as a list, tuple, or string). Choose a random element from a non-empty sequence.
+Example:
+import random
+fruits = ["apple", "banana", "cherry", "orange"]
+Choose a random fruit from the list
+random_fruit = random.choice(fruits)
+print(random_fruit)
+
+* The randrange() function in Python, part of the random module, generates a random number from the specified range.
+Example: 
+import random
+Generate a random number between 1 and 10
+random_number = random.randrange(1, 11)
+print(random_number)
+
+### Python Modules: 
+These are libraries that contain code, that gives classess, methods, and functions, their functionality. 
+NB: The moment a module is imported, the Python interpreter 
+
+
+
 
 
 
