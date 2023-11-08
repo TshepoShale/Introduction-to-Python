@@ -380,12 +380,63 @@ Extends list by appending all items from the iterable.
 ### list.insert(i,x): 
 Inserts items at a given position. 1st arguments is index of element, before which to insert. Insert, adds it at the front of the list. 
 
-### list.remove(x);
+### list.remove(x):
 Returns first item from the list, whose value is equal to x. 
 
 ### list.pop([i]):
-Remove item, at a given position, and return it. If no index is specified, a pop() removes and returns the last item in the list. 
+Remove item, at a given position, and return it. If no index is specified, a pop() removes and returns the last item in the list. Square brackets mean that the parameter is optional, so you don't need to type square brackets, in that position. 
 
+### list.clear():
+Removes all items from the list. 
+
+### list.index(x[, start[ end]]):
+Returns zero-based in the list of the first item, whose value is equal to x. Optional parameters START and END, are interpreted as the slice notation, and are used to limit the search, to a list. 
+
+### list.count(x):
+Returns the number of times x appears on the list. 
+
+### list.sort(key = None, reverse = False):
+Sorts the items of the list, in place. 
+
+### list.reverse():
+Reverse the elements of the list in place. 
+
+### list.copy():
+Returns shallow copy of the list. 
+
+## Day 3: 
+## Errors and Exceptions: 
+
+
+## Day 4: 
+## Classes: 
+Classes can have methods, for modifying its state. Creating a new class, creates a new type of instance to be made. 
+Methods: Functions assosciatd in a class. 
+NB: Instance variables contain data unique to each instance. 
+We use the 'pass' statement to create an empty class. The 'pass' keyword can be placed under the class declaration, to let the compiler know that more code, or logic will come underneath there. 
+
+Example: 
+class Employee: 
+def_ _ init _ _ (self, first, last, pay):
+self.first = first
+self.last = last 
+self.pay = pay 
+emp_1 = Employee('Tshepo', 'Shale', 41000) ---> This is an instance of a class. 
+
+ _ _ init _ _ : This is a constructor. It is called when a new instance of a variable is created. 
+
+ * Classes are like blueprints.
+ * Attributes within a class, are characteristics.
+ * Methods of a class, are actions.
+ * Objects, are instances of a class. eg. like a specific car, is an object of a 'Car' class.
+ * Encapsulation: classes help you keep related attributes and methods together; making code easier to manage, and understand. 
+
+#### Scopes: 
+These are textual regions of a python programme, where a namespace is directly accessible. Basically is a set of rules where you can access, or modify a variable. 
+##### Global Scope: 
+Variables defined outside of the function. Can be accessed anywhere in the code. 
+##### Local Scope: 
+Variables that exist within the function itself. Cannot be acessed anywhere else, other that inside that function. 
 
 
 
