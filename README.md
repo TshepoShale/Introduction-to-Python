@@ -367,6 +367,25 @@ NB: You can check module lists using help("modules").
 Regular expressions (regex) in Python are a powerful tool for pattern matching and searching in strings. The re module in Python provides support for regular expressions. Regular expressions are used to specify a search pattern, which can be a string or a complex expression, and then this pattern can be used to find matches within strings, replace substrings, or split strings based on the specified pattern.
 NB: Use the import re module to utilize RegEx. 
 
+## Week 3: 
+## Day 1: 
+### List Data-type methods: 
+
+### list.append(x):
+Adds an item to the end of the list. 
+
+### list.extend(iterable):
+Extends list by appending all items from the iterable. 
+
+### list.insert(i,x): 
+Inserts items at a given position. 1st arguments is index of element, before which to insert. Insert, adds it at the front of the list. 
+
+### list.remove(x);
+Returns first item from the list, whose value is equal to x. 
+
+### list.pop([i]):
+Remove item, at a given position, and return it. If no index is specified, a pop() removes and returns the last item in the list. 
+
 
 
 
