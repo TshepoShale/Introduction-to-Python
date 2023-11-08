@@ -371,42 +371,69 @@ NB: Use the import re module to utilize RegEx.
 ## Day 1: 
 ### List Data-type methods: 
 
-### list.append(x):
+### * list.append(x):
 Adds an item to the end of the list. 
 
-### list.extend(iterable):
+### * list.extend(iterable):
 Extends list by appending all items from the iterable. 
 
-### list.insert(i,x): 
+### * list.insert(i,x): 
 Inserts items at a given position. 1st arguments is index of element, before which to insert. Insert, adds it at the front of the list. 
 
-### list.remove(x):
+### * list.remove(x):
 Returns first item from the list, whose value is equal to x. 
 
-### list.pop([i]):
+### * list.pop([i]):
 Remove item, at a given position, and return it. If no index is specified, a pop() removes and returns the last item in the list. Square brackets mean that the parameter is optional, so you don't need to type square brackets, in that position. 
 
-### list.clear():
+### * list.clear():
 Removes all items from the list. 
 
-### list.index(x[, start[ end]]):
+### * list.index(x[, start[ end]]):
 Returns zero-based in the list of the first item, whose value is equal to x. Optional parameters START and END, are interpreted as the slice notation, and are used to limit the search, to a list. 
 
-### list.count(x):
+### * list.count(x):
 Returns the number of times x appears on the list. 
 
-### list.sort(key = None, reverse = False):
+### * list.sort(key = None, reverse = False):
 Sorts the items of the list, in place. 
 
-### list.reverse():
+### * list.reverse():
 Reverse the elements of the list in place. 
 
-### list.copy():
+### * list.copy():
 Returns shallow copy of the list. 
 
 ## Day 3: 
 ## Errors and Exceptions: 
+#### Try-Block: A Safety Net for Your Code
 
+Imagine you're doing a tricky task, like juggling. You might drop the balls, right? In programming, sometimes things can go wrong, too. The try block is like your safety net—it catches the errors and prevents your program from crashing.
+How It Works:
+1. You put the risky code inside the try block.
+2. If everything goes well, Python continues without any problems.
+3. If an error happens inside the try block, Python doesn't stop. Instead, it jumps to the except block.
+4. In the except block, you can handle the error. Maybe you print a message or do something else to manage the problem.
+
+Example: 
+try:
+    result = 10 / 0  # Risky code! Dividing by zero causes an error
+except ZeroDivisionError:
+    print("Oops! Can't divide by zero.")
+#### * TypeError: 
+Occurs when you try to do something with a data type, that is not allowed. 
+#### * SyntaxError: 
+When syntax is incorrect. 
+#### * NameError: 
+When you try to access a function, or variable that has not been defined in the scope. 
+#### * AssertationError:
+Here you use the 'assert' statement. Raiases an alarm for your code. Maybe your assumption for a condition in your code, probably did not hold. 
+Example: 
+
+age = 15
+assert >= 18, "Too Young!"
+Error Message here would be: 
+AssertationError: "Too Young!" 
 
 ## Day 4: 
 ## Classes: 
@@ -433,10 +460,13 @@ emp_1 = Employee('Tshepo', 'Shale', 41000) ---> This is an instance of a class.
 
 #### Scopes: 
 These are textual regions of a python programme, where a namespace is directly accessible. Basically is a set of rules where you can access, or modify a variable. 
-##### Global Scope: 
+##### * Global Scope: 
 Variables defined outside of the function. Can be accessed anywhere in the code. 
-##### Local Scope: 
+##### * Local Scope: 
 Variables that exist within the function itself. Cannot be acessed anywhere else, other that inside that function. 
+
+#### Namespaces: 
+Mapping from names, to objects. In other words,namespace is like a box where you keep all your variables (names of things), and funcitons (the actions that you do). Same with creating a class; when you create a class, it has its own namespace, to store it's own stuff. eg. Your ID number. 
 
 
 
