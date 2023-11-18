@@ -96,7 +96,7 @@ match
 
 Anaconda is a popular open-source distribution of Python and other data science-related packages. It simplifies the process of installing, managing, and updating Python libraries for data science, machine learning, and scientific computing. Anaconda includes tools such as conda, a powerful package manager, and provides an environment management system, allowing users to create isolated Python environments for different projects, making it easier to manage dependencies and avoid conflicts between packages. 
 
-  
+                                                                --- END OF WEEK 1 ---
 
 ## Day 2:  
 
