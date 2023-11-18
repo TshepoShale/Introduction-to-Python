@@ -96,7 +96,7 @@ match
 
 Anaconda is a popular open-source distribution of Python and other data science-related packages. It simplifies the process of installing, managing, and updating Python libraries for data science, machine learning, and scientific computing. Anaconda includes tools such as conda, a powerful package manager, and provides an environment management system, allowing users to create isolated Python environments for different projects, making it easier to manage dependencies and avoid conflicts between packages. 
 
-                                                                --- END OF WEEK 1 ---
+                                                                
 
 ## Day 2:  
 
@@ -288,7 +288,7 @@ Assignment Operators:
 in: Returns True if a value exists in a sequence (e.g., list, tuple, string).
 is: Returns True if two variables refer to the same object.
 not in: Returns True if a value does not exist in a sequence.
-                                                                  --- END OF WEEK 1 ---
+                                                                      --- END OF WEEK 1 ---
 ## Week 2: 
 ## Day 1: 
 
@@ -464,6 +464,8 @@ Variables that exist within the function itself. Cannot be acessed anywhere else
 
 #### Namespaces: 
 Mapping from names, to objects. In other words,namespace is like a box where you keep all your variables (names of things), and funcitons (the actions that you do). Same with creating a class; when you create a class, it has its own namespace, to store it's own stuff. eg. Your ID number. 
+
+                                                            
                                                                 --- END OF WEEK 3 ---
 ## Week 4: 
 ## Day 1: 
