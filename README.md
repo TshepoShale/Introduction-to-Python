@@ -199,9 +199,6 @@ dir(__builtins__), dir(__doc__), dir(__name__), and dir(__package__) cannot be u
   
 
 ### Casting:  
-
-  
-
 #### Implicit Casting:  
 
 In Python, automatic type conversion, also known as implicit casting, allows the interpreter to automatically convert compatible data types, such as integers to floats or floats to strings, as needed during operations or assignments, simplifying code and enhancing flexibility. Also ensures that no data is lost when these conversions occur.  
@@ -291,7 +288,7 @@ Assignment Operators:
 in: Returns True if a value exists in a sequence (e.g., list, tuple, string).
 is: Returns True if two variables refer to the same object.
 not in: Returns True if a value does not exist in a sequence.
-
+                                                                  --- END OF WEEK 1 ---
 ## Week 2: 
 ## Day 1: 
 
@@ -366,7 +363,7 @@ NB: You can check module lists using help("modules").
 ### Regular Expressions: 
 Regular expressions (regex) in Python are a powerful tool for pattern matching and searching in strings. The re module in Python provides support for regular expressions. Regular expressions are used to specify a search pattern, which can be a string or a complex expression, and then this pattern can be used to find matches within strings, replace substrings, or split strings based on the specified pattern.
 NB: Use the import re module to utilize RegEx. 
-
+                                                                          --- END OF WEEK 2 ---
 ## Week 3: 
 ## Day 1: 
 ### List Data-type methods: 
@@ -467,8 +464,204 @@ Variables that exist within the function itself. Cannot be acessed anywhere else
 
 #### Namespaces: 
 Mapping from names, to objects. In other words,namespace is like a box where you keep all your variables (names of things), and funcitons (the actions that you do). Same with creating a class; when you create a class, it has its own namespace, to store it's own stuff. eg. Your ID number. 
+                                                                --- END OF WEEK 3 ---
+## Week 4: 
+## Day 1: 
+
+### Inheritance and Private Variables: 
+Built-in methods for inheritance: 
+#### * isinstance(): 
+Checks if an object belongs to a particular class, or a tuple of classes. 
+
+eg. 
+class Animal:
+pass
+class Dog(Animal):
+pass
+my_dog = Dog()
+print(isinstance(my_dog,Dog)) # true statement here. 
+print(isintance(my_dog,Animal))
+
+#### * issubclass(): 
+Used to check if a class, is a sublass of another class. Also helps you verify inheritance between two classes (their relationship). 
+
+eg.
+class Animal:
+pass
+class Mammal (Animal):
+pass
+print(issubclass(Mammal, Animal))
+print(issubclass(Animal,Mammal))
+
+#### Different Types of Inheritances: 
+
+* Single Inheritance:
+Child class only inheriting from one parent.
+* Multiple inheritance:
+Child class inheriting from more than one parent class. 
+* Multi-level inheritance:
+Child class becoming th eparent class, for another class.
+* Hierarchial inheritance:
+Child class becoming the parent class, for another class.
+
+#### Private Variables: 
+To make instance variables priivate in Python, you use an underscore, with a name. eg. _variable
+eg. 
+class myClass:
+def __init__ (self):
+self._private_variable = 10
+obj = myClass()
+print(obj._private_variable)
+
+##### * getattr():
+Used to get value of attributes, from an object. 
+
+##### * setattr():
+Sets the value of an attribute, to an object. 
+
+##### * delattr(): 
+Deletews an attribute from an object. 
+
+## Day 2: 
+### Iterators and Generators: 
+#### Iterators:
+An iterator is an object that represents a sequence of data. It allows you to loop through the elements of a collection, like a list or a tuple, one at a time. Think of it as a pointer that points to an element in a sequence, and you can move this pointer to the next element until you reach the end.
+
+my_list = [1, 2, 3, 4, 5]
+my_iterator = iter(my_list)
+
+#### Generators:
+A generator is a special type of iterator. While iterators are typically created using classes, generators are created using functions with the yield keyword. The main difference is that generators allow you to iterate over a potentially infinite sequence without having to store all the values in memory.
+
+def my_generator():
+    yield 1
+    yield 2
+    yield 3
+    yield 4
+    yield 5
+
+ Use the generator in a loop
+gen = my_generator()
+for value in gen:
+    print(value)
+ Output: 1, 2, 3, 4, 5
 
 
+ Access elements one by one
+print(next(my_iterator))  # Output: 1
+print(next(my_iterator))  # Output: 2
+...and so on
+The yield statement in the function pauses its state, allowing you to resume from where it left off when you call next() again. This makes generators memory-efficient for large sequences.
+
+In summary:
+
+Iterators allow you to go through a sequence of elements one at a time.
+Generators are a special type of iterator created using functions with yield, offering a memory-efficient way to generate sequences.
+
+## Day 3: 
+### Dates,Times, Data Compression, Output Formatting and More... :
+#### datetime Module:
+Provides classes for working with dates and times. 
+eg. 
+from datetime import datetime 
+now = datetime.now()
+print(now) 
+
+#### Data Compression: 
+Reducing file storage for smoother, and faster transferring over a network. 
+#### Gzip: 
+Convenient interface for working with GZIP compressed files. 
+
+eg. 
+import gzip
+data = b "Compress using gzip" 
+with gzip.open('compressed.gz','wb') as f:
+f.write(data)
+
+##### Performance Management: 
+* Use built-in functions and modules, and libraries.
+* Use efficient algorithms & data structures.
+
+##### Datasets in Python: 
+Embedding sets directly, in the documentation of a module, class, or a function. 
+
+* NB: If everything is correct in your code, there wull be no output. If something is incorrect, dataset will print information about the failure.
+* Doctests help in making sure that your examples are correct, and up-to-date.
+  eg.
+  def add (a,b): # adding 2 numbers
+  add(2,3)
+  return a+b
+
+  ##### Lossy Compression:
+  Usually used for music & files.
+
+  ##### * reprlib in Python:
+  Used when working with large data structures. Produces a string representation of the object, that is limited in length.
+  eg.
+  import reprlib
+  data = [ 1,2,3,4,5,6,7,8,9,10 ]
+  short_repr = reprlib.repr(data)
+  print(short_rep)
+
+  ##### * pprint in Python:
+  Provides more readable representation of data structures.
+  * Offers readability
+  * Offers indentation
+  * Line-breaking (break lines to fit the display).
+  * You can also customize output width.
+
+##### locale Module: 
+Helps you with formatting your program to interpret dates, times, and currency formats. In other words, it helps your program speak to users, in a certain language, by presenting info, in a way that users can resonate with culturally.
+
+
+## Day 4: 
+### pip: 
+#### What is pip?:
+Helps you easily bring tools (libraries and packages), for your Python projects. 
+How to install it: 
+pip install tool_name
+### Floating-Point Arithmetic: 
+Involves representing real numbers (those with decimal points), using a fixed amount of memory. 
+eg. result = 0.1 + 0.2
+print(result) # output may not exactly be 0.3
+if result == 0.3:  # comparison
+print("Equal")
+else:
+print("Not Equal") # compiler might print this due to rounding errors. 
+* NB: PC's do not represent all real numbers exactly, due to limited memory. Also, please note that rouding erros can occur. Lastly, some decimal numbers cannot be represented in binary exactly, resulting in representation errors.
+
+#### Templating in Python: 
+Creating templates that define how dynamic content should be inserted into a document. 
+It's also reusable, and makes your content dynamic. 
+
+#### Logging: 
+Basically keeping track of information, or what your program is doing. 
+Helps you log messages, like reporting issues. 
+Logging can help you minotr, by means of tracing back to where an issue occured. It can also help you see where/what the program was doing at different points. 
+
+#### Virtual Environments in Python: 
+Seperate workspaces for each of your projects. These workspaces also come in different versions. You decide on a directory where you want to place it, and then run a module as a script, with the directory path. 
+##### cmd to create Work Environment in Python:
+1). python - venv my_environment 
+2). my_environment\Scripts\activate
+* Virtual environments kep different versions of libraries and modules seperate, to avoid conflict.
+
+  ### Floating-point Arithmetic:
+  Involves representing real numbers (those with decimal points), using a fixed amount of memory.
+  eg.
+  result = 0.1 + 0.2
+  print(result) (Output may not exactly be 0.3)
+  if result == 0.3: (Comparison)
+  print("Equal")
+  else:
+  print("Not Equal") (Here the compiler might print this output, due to rounding errors. 
+
+NB: 
+* PC's cannot represent all real numbers exactly, due to limited memory.
+* Rounding errors can occur.
+* Some decimal numbers cannot be represented in binary exactly, resulting in representation errors.
+
+                                                                    ---  END OF WEEK 4 ---
 
 
 
