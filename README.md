@@ -288,6 +288,8 @@ Assignment Operators:
 in: Returns True if a value exists in a sequence (e.g., list, tuple, string).
 is: Returns True if two variables refer to the same object.
 not in: Returns True if a value does not exist in a sequence.
+                                                                   
+                                                                      
                                                                       --- END OF WEEK 1 ---
 ## Week 2: 
 ## Day 1: 
